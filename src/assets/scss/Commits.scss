@@ -1,0 +1,39 @@
+.commits {
+    margin: 20px auto 0 auto;
+    max-width: 850px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+
+
+    h1 {
+        position: relative;
+        margin-bottom: 20px;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+        .back {
+            position: absolute;
+            top: 50%;
+            left: 8px;
+            transform: translate(0, -50%);
+            cursor: pointer;
+        }
+    }
+
+    .date {
+        font-weight: 600;
+    }
+
+    .message {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        font-weight: 700;
+
+        i {
+            margin-left: 8px;
+            color: blue;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.repo {
+    display: flex;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin: 8px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+
+
+    .name {
+        font-weight: 600;
+        word-break: break-all;
+        text-transform: capitalize;
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+
+    .infos {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+        .stars,
+        .shared,
+        .watch {
+            display: flex;
+            align-items: center;
+
+            i {
+                margin-right: 4px;
+            }
+        }
+
+        .stars i {
+            color: yellow;
+        }
+    }
+}
