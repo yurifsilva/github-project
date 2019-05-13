@@ -2,7 +2,7 @@
 	<div class="commits">
 		<div class="search">
 			<v-text-field
-				label="Buscar por texto"
+				label="Search"
 				hide-details
 				outline
 				v-model="textSearch"
