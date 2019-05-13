@@ -22,11 +22,6 @@ export default new Router({
       path: "/repositories/:User/:Name/commits",
       name: "Commits",
       component: () => import("views/Commits.vue")
-    },
-    {
-      path: "/about",
-      name: "about",
-      component: () => import("views/About.vue")
     }
   ]
 });

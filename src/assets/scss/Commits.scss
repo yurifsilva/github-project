@@ -1,39 +1,70 @@
 .commits {
     margin: 20px auto 0 auto;
     max-width: 850px;
-    border: 1px solid rgba(0, 0, 0, 0.125);
 
-
-    h1 {
-        position: relative;
-        margin-bottom: 20px;
-        padding: 20px 0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-
-        .back {
-            position: absolute;
-            top: 50%;
-            left: 8px;
-            transform: translate(0, -50%);
-            cursor: pointer;
-        }
-    }
-
-    .date {
-        font-weight: 600;
-    }
-
-    .message {
+    .search {
         display: flex;
         align-items: center;
-        justify-content: center;
-        padding: 16px;
-        font-weight: 700;
+        margin-bottom: 20px;
+        z-index: 2;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        padding: 10px 0;
+    }
 
-        i {
-            margin-left: 8px;
-            color: blue;
-            cursor: pointer;
+    &-content {
+        border: 1px solid rgba(0, 0, 0, 0.125);
+
+        h1 {
+            position: relative;
+            margin-bottom: 20px;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+            .back {
+                position: absolute;
+                top: 50%;
+                left: 8px;
+                transform: translate(0, -50%);
+                cursor: pointer;
+            }
+        }
+
+        h3 {
+            position: sticky;
+            top: 70px;
+            background-color: white;
+            z-index: 2;
+            padding: 10px 0;
+
+            span {
+                color: red;
+                font-weight: 700;
+            }
+        }
+
+        .filtered {
+            display: none;
+        }
+
+        .date {
+            font-weight: 600;
+        }
+
+        .message {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            font-weight: 700;
+            word-break: break-all;
+
+            i {
+                margin-left: 8px;
+                color: blue;
+                cursor: pointer;
+            }
         }
     }
 }
