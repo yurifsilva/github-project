@@ -3,7 +3,7 @@ const path = require("path");
 const sourcePath = path.resolve(__dirname, "src/");
 
 module.exports = {
-  publicPath: "github-project",
+  // publicPath: 'github-project',
   configureWebpack: {
     resolve: {
       alias: {
